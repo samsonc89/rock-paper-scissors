@@ -6,19 +6,52 @@ function computerPlay() {
     return playChoice[Math.floor(Math.random() *3)]
 }
 
+
+let playerInput =function () {
+    let input = prompt("Rock, Paper or Scissors?", "");
+    if (input === null) {
+        alert('Cancelled');
+        return;} 
+        let inputEdited = input.toLowerCase();
+    if (inputEdited !== 'rock' && inputEdited !== 'paper' && inputEdited !== 'scissors') {
+        alert('Invalid Answer');
+
+    }
+ else 
+    return inputEdited
+
+}
+
+    /*
+    .toLowerCase();
+if (input !=== 'rock' ||input !=== 'paper' || input !=== 'scissors') {
+    alert('Invaled Answer');
+    return false
+} else {
+    return
+}
+}
+*/
 let playerScore =  0;
 let computerScore = 0;
-console.log(playerScore, computerScore);
+
+
+
 
 //User will input their choice
 const playRound = function () {
-let playerSelection = 'paper'
+let playerSelection = playerInput();
+let computerSelection ;
+
 // prompt("Rock, Paper or Scissors?", "").toLowerCase();
 console.log(playerSelection);
 
-
-let computerSelection = computerPlay();
+if (playerSelection !== null && playerSelection !== undefined){
+    computerSelection = computerPlay();
 console.log(computerSelection);
+} else {
+    return;
+}
 //Return who wins
 // return winner    
 if (playerSelection == computerSelection){
@@ -36,7 +69,8 @@ if (playerSelection == computerSelection){
             console.log( `You Lose! ${computerSelection} beats ${playerSelection} `);
 
 
-}
+        }
+
 } 
     
 
@@ -56,4 +90,6 @@ let game = function(){
         console.log('Tie Game!');
     }
 }
+
 game();
+
