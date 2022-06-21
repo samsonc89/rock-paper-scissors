@@ -9,10 +9,11 @@ function computerPlay() {
 let playerScore =  0;
 let computerScore = 0;
 console.log(playerScore, computerScore);
+
 //User will input their choice
 const playRound = function () {
-let playerSelection = 'rock'
-// prompt("Rock, Paper or Scissors?", "").toLowerCase();
+let playerSelection = 
+prompt("Rock, Paper or Scissors?", "").toLowerCase();
 console.log(playerSelection);
 
 
@@ -52,12 +53,9 @@ if (playerSelection == 'rock') {
     }
 } 
 }
-// console.log(playRound());
 
 
 //Do this for 5 rounds
-
-
 
 let game = function(){
     for (let i = 0; i < 5; i++){
