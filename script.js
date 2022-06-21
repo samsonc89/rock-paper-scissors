@@ -30,10 +30,10 @@ if (playerSelection == computerSelection){
 
         ){
             playerScore++;
-            console.log( `You Win! `);
+            console.log( `You Win! ${playerSelection} beats ${computerSelection} `);
         } else {
             computerScore++;
-            console.log('You Lose!');
+            console.log( `You Lose! ${computerSelection} beats ${playerSelection} `);
 
 
 }
