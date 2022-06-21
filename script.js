@@ -12,8 +12,8 @@ console.log(playerScore, computerScore);
 
 //User will input their choice
 const playRound = function () {
-let playerSelection = 
-prompt("Rock, Paper or Scissors?", "").toLowerCase();
+let playerSelection = 'paper'
+// prompt("Rock, Paper or Scissors?", "").toLowerCase();
 console.log(playerSelection);
 
 
@@ -21,38 +21,24 @@ let computerSelection = computerPlay();
 console.log(computerSelection);
 //Return who wins
 // return winner    
-if (playerSelection == 'rock') {
-    if (computerSelection == 'scissors'){
-        playerScore++
-        console.log( `You Win! `)
-    } else if (computerSelection =='paper') { 
-        computerScore++
-        console.log( 'You Lose!')
-    } else {
-        console.log( 'Draw!') 
-    }
-} else if (playerSelection =='paper'){
-    if (computerSelection == 'rock'){
-        playerScore++
-        console.log( 'You Win!'
-)    } else if (computerSelection =='scissors'){
-        computerScore++
-        console.log( "You Lose!")
-    } else {
-        console.log( "Draw!") 
-    }
-} else {
-    if (computerSelection == 'paper') {
-        playerScore++
-        console.log( "You Win!"
-)    } else if (computerSelection == 'rock') {
-        computerScore++
-        console.log( 'You Lose!')
-    } else {
-        console.log( 'Draw!') 
-    }
-} 
+if (playerSelection == computerSelection){
+    console.log('Draw!');
+} else if (
+    (playerSelection == 'rock' && computerSelection == 'scissors')||
+    (playerSelection =='paper' && computerSelection == 'rock') ||
+    (playerSelection =='scissors' && computerSelection == 'paper') 
+
+        ){
+            playerScore++;
+            console.log( `You Win! `);
+        } else {
+            computerScore++;
+            console.log('You Lose!');
+
+
 }
+} 
+    
 
 
 //Do this for 5 rounds
