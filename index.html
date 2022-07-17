@@ -3,31 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" src="./styles.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
     <div id="head-title">
-      <h1>Rock Paper Scissors!</h1>
+        <h1>Rock Paper Scissors!</h1>
     </div>
     <div id="title">
-      <h2>COMPUTER</h3>
-    </div>
-    <div id="game-area">
-        <div id="score"></div>
-        <div id="choices"></div>
-    </div>
-    <div id="title">
-        <h2>PLAYER</h2>
-    </div>
-    <div id="player-area">
-        <div id="player-choice">
-            <h3>Choose!</h3>
-            <div class="choice" id="rock"></div>
-            <div class="choice" id="paper"></div>
-            <div class="choice" id="scissors"></div>
-            <button id="reset"></button>        
+        <h2>COMPUTER</h3>
         </div>
-    </div>
+        <div class="area" id="game-area">
+            <div class="area" id="score-area">
+                <h3>Score</h3>
+                <div class="score-container" id="computer-score"></div>
+                <div class="score-container" id="player-score"></div>
+            </div>
+            <div class="area" id="choices-area">
+                <div class="choice-container" id="computer-choice"></div>
+                <div class="choice-container" id="player-choice"></div>
+            </div>
+        </div>
+        <div id="title">
+            <h2>PLAYER</h2>
+        </div>
+        <div class="area" id="player-area">
+            <h3>Choose!</h3>
+            <div class="area" id="player-choice">
+                <div class="option" id="rock"></div>
+                <div class="option" id="paper"></div>
+                <div class="option" id="scissors"></div>
+            </div>
+            <button id="reset">Reset</button>        
+        </div>
+        <script src="./script.js" defer></script>
   </body>
 </html>
