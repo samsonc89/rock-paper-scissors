@@ -8,7 +8,7 @@ body {
   align-content: center;
 }
 h3 {
-  margin-bottom: 0;
+  margin: 0;
 }
 #score-title {
   justify-self: start;
@@ -19,6 +19,7 @@ h3 {
 }
 #game-area {
   justify-content: center;
+  margin: 0 auto;
 }
 #player-area,
 #score-area,
@@ -29,16 +30,17 @@ h3 {
 
 #score-area {
   justify-content: flex-start;
-  align-items: center;
 }
+
 #scores-container {
   margin-top: 20px;
-  gap: 50px;
+  gap: 80px;
 }
 #choices-area {
-  align-items: flex-start;
-  justify-self: center;
-  padding-left: 50px;
+  align-items: center;
+  justify-self: flex-start;
+  padding-left: 60px;
+
   gap: 20px;
 }
 .score-container {
@@ -49,12 +51,6 @@ h3 {
 .choice-container {
   width: 150px;
   height: 150px;
-  border: 1px solid black;
-}
-
-.option {
-  width: 90px;
-  height: 90px;
   border: 1px solid black;
 }
 
@@ -69,4 +65,9 @@ h3 {
 
 button {
   align-self: center;
+}
+
+.play {
+  width: 90px;
+  height: 90px;
 }
