@@ -1,0 +1,39 @@
+* {
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+}
+
+#player-area,
+#score-area,
+#choices-area {
+  flex-direction: column;
+}
+
+.score-container {
+  width: 100px;
+  height: 100px;
+}
+
+.choice-container {
+  width: 200px;
+  height: 200px;
+}
+
+.option {
+  width: 50px;
+  height: 50px;
+}
+
+#reset {
+  width: 100px;
+  height: 50px;
+}
+
+button {
+  align-self: center;
+}
