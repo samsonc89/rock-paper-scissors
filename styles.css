@@ -1,34 +1,67 @@
 * {
   text-align: center;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
-
+body {
+  width: 75%;
+  margin: 0 auto;
+  align-content: center;
+}
+h3 {
+  margin-bottom: 0;
+}
+#score-title {
+  justify-self: start;
+}
 .area {
   display: flex;
   justify-content: center;
 }
-
+#game-area {
+  justify-content: center;
+}
 #player-area,
 #score-area,
-#choices-area {
+#choices-area,
+#scores-container {
   flex-direction: column;
 }
 
-.score-container {
-  width: 100px;
-  height: 100px;
+#score-area {
+  justify-content: flex-start;
+  align-items: center;
 }
-
+#scores-container {
+  margin-top: 20px;
+  gap: 50px;
+}
+#choices-area {
+  align-items: flex-start;
+  justify-self: center;
+  padding-left: 50px;
+  gap: 20px;
+}
+.score-container {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
 .choice-container {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
 }
 
 .option {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
 }
 
+#player-choice {
+  gap: 20px;
+  margin-bottom: 50px;
+}
 #reset {
   width: 100px;
   height: 50px;
