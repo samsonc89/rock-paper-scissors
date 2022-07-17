@@ -1,5 +1,7 @@
 * {
   text-align: center;
+  color: white;
+  background-color: black;
   /* border: 1px solid blue; */
 }
 body {
@@ -47,11 +49,16 @@ h3 {
   width: 70px;
   height: 70px;
   border: 1px solid black;
+  background-color: #fcf2f1;
+  color: black;
+  line-height: 70px;
+  font-size: 2em;
 }
 .choice-container {
   width: 150px;
   height: 150px;
   border: 1px solid black;
+  background-color: #fcf2f1;
 }
 
 #player-choice {
@@ -65,9 +72,27 @@ h3 {
 
 button {
   align-self: center;
+  background-color: #fcf2f1;
+  color: black;
 }
 
 .play {
   width: 90px;
   height: 90px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#rock {
+  background: url(./images/rock.png) center no-repeat;
+  background-size: 100% 100%;
+}
+
+#paper {
+  background: url(./images/paper.png) center no-repeat;
+  background-size: 100% 100%;
+}
+#scissors {
+  background: url(./images/scissors.png) center no-repeat;
+  background-size: 100% 100%;
 }
