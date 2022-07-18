@@ -21,24 +21,6 @@ over each item in that list. which is why you use the forEach method.
 */
 const playerChoices = document.querySelectorAll(".play");
 
-/*function () {
-  let input = prompt("Rock, Paper or Scissors?", "");
-  if (input === null) {
-    alert("Cancelled");
-    return;
-  }
-  let inputEdited = input.toLowerCase();
-  if (
-    inputEdited !== "rock" &&
-    inputEdited !== "paper" &&
-    inputEdited !== "scissors"
-  ) {
-    alert("Invalid Answer");
-  } else return inputEdited;
-};
-*/
-
-//User will input their choice
 const playRound = function () {
   let playerSelection = playerInput;
   let computerSelection;
@@ -82,10 +64,27 @@ playerChoices.forEach(function (btn) {
   });
 });
 
-//Do this for 5 rounds
+/*function () {
+  let input = prompt("Rock, Paper or Scissors?", "");
+  if (input === null) {
+    alert("Cancelled");
+    return;
+  }
+  let inputEdited = input.toLowerCase();
+  if (
+    inputEdited !== "rock" &&
+    inputEdited !== "paper" &&
+    inputEdited !== "scissors"
+  ) {
+    alert("Invalid Answer");
+  } else return inputEdited;
+};
+*/
 
+/*
+//Do this for 5 rounds
 let game = function () {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 5; i++) {
     if (playerInput == null || playerInput == undefined) {
       break;
     } else {
@@ -104,4 +103,4 @@ let game = function () {
   }
 };
 
-// game();
+*/
