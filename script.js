@@ -7,20 +7,23 @@ const computerChoiceDisplay = document.getElementById("computer-display");
 const playerChoiceDisplay = document.getElementById("player-display");
 
 const reset = document.querySelector("#reset");
+let playerScore;
+let computerScore;
 
-let playerScore = 0;
-let computerScore = 0;
-playerScoreDisplay.textContent = playerScore;
-computerScoreDisplay.textContent = computerScore;
-
-reset.addEventListener("click", () => {
+//create initialize function to reduce code
+const init = function () {
   playerScore = 0;
   computerScore = 0;
-  playerScoreDisplay.textContent = playerScore;
-  computerScoreDisplay.textContent = computerScore;
+  playerScoreDisplay.textContent = "";
+  computerScoreDisplay.textContent = "";
   playerChoiceDisplay.style.background = "";
   computerChoiceDisplay.style.background = "";
-});
+};
+init();
+
+//add function to reset button
+reset.addEventListener("click", init);
+
 //start with function that has computer return rock paper or scissors
 function computerPlay() {
   let playChoice = ["rock", "paper", "scissors"];
