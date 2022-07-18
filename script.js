@@ -5,6 +5,7 @@ const computerScoreDisplay = document.getElementById("computer-score");
 
 const computerChoiceDisplay = document.getElementById("computer-display");
 const playerChoiceDisplay = document.getElementById("player-display");
+const message = document.getElementById("modal-p");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
@@ -75,11 +76,13 @@ const playRound = function () {
       playerScore++;
       if (playerScore == 5) {
         openModal();
+        message.innerHTML = "You Win!";
       }
     } else {
       computerScore++;
       if (computerScore == 5) {
         openModal();
+        message.innerHTML = "You lose!";
       }
     }
     computerChoiceDisplay.style.background = `url(./images/${computerSelection}.png) center no-repeat`;
