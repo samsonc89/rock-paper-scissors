@@ -37,7 +37,6 @@ const playRound = function () {
   //Return who wins
   // return winner
   if (playerSelection == computerSelection) {
-    console.log("Draw!");
   } else if (
     (playerSelection == "rock" && computerSelection == "scissors") ||
     (playerSelection == "paper" && computerSelection == "rock") ||
