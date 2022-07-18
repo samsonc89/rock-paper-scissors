@@ -6,9 +6,21 @@ const computerScoreDisplay = document.getElementById("computer-score");
 const computerChoiceDisplay = document.getElementById("computer-display");
 const playerChoiceDisplay = document.getElementById("player-display");
 
+const reset = document.querySelector("#reset");
+
 let playerScore = 0;
 let computerScore = 0;
+playerScoreDisplay.textContent = playerScore;
+computerScoreDisplay.textContent = computerScore;
 
+reset.addEventListener("click", () => {
+  playerScore = 0;
+  computerScore = 0;
+  playerScoreDisplay.textContent = playerScore;
+  computerScoreDisplay.textContent = computerScore;
+  playerChoiceDisplay.style.background = "";
+  computerChoiceDisplay.style.background = "";
+});
 //start with function that has computer return rock paper or scissors
 function computerPlay() {
   let playChoice = ["rock", "paper", "scissors"];
