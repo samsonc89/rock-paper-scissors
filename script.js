@@ -62,10 +62,8 @@ const playRound = function () {
     (playerSelection == "scissors" && computerSelection == "paper")
   ) {
     playerScore++;
-    console.log(`You Win! ${playerSelection} beats ${computerSelection} `);
   } else {
     computerScore++;
-    console.log(`You Lose! ${computerSelection} beats ${playerSelection} `);
   }
   computerChoiceDisplay.style.background = `url(./images/${computerSelection}.png) center no-repeat`;
   computerChoiceDisplay.style.backgroundSize = "100% 100%";
