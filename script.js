@@ -22,7 +22,6 @@ const init = function () {
   computerScoreDisplay.textContent = "";
   playerChoiceDisplay.style.background = "";
   computerChoiceDisplay.style.background = "";
-  closeModal();
 };
 
 //add function to reset button
