@@ -9,6 +9,13 @@ body {
   margin: 0 auto;
   align-content: center;
 }
+
+#head-title h1 {
+  margin-bottom: 0;
+}
+#head-title h2 {
+  margin-top: 0;
+}
 h3 {
   margin: 0;
 }
